@@ -12,6 +12,7 @@ export default function Tabela({ usuarios }) {
                     <th>EMAIL</th>
                     <th>CELULAR</th>
                     <th>WEBSITE</th>
+                    <th>OPÇOES</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,6 +24,7 @@ export default function Tabela({ usuarios }) {
                             <td>{usuario.email}</td>
                             <td>{usuario.phone}</td>
                             <td>{usuario.website}</td>
+                            <td>Alterar Excluir</td>
                         </tr>
                     ))
                 }
