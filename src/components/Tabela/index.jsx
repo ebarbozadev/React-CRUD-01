@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Tabela.module.css';
 
 export default function Tabela({ usuarios }) {
     return (
-        <table>
+        <table className={styles.tabela}>
             <caption>Usuários cadastrados</caption>
             <thead>
                 <tr>
