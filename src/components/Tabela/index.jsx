@@ -7,11 +7,11 @@ export default function Tabela({ usuarios }) {
             <caption>Usuários cadastrados</caption>
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Celular</th>
-                    <th>Site</th>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>CELULAR</th>
+                    <th>WEBSITE</th>
                 </tr>
             </thead>
             <tbody>
