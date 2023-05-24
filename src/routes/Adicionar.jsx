@@ -21,7 +21,7 @@ export default function Adicionar() {
       body: usuario,
     });
 
-    navigate('/tabela'); // Redireciona para a página da tabela após adicionar o usuário
+    navigate('/'); // Redireciona para a página da tabela após adicionar o usuário
   };
 
   return (
