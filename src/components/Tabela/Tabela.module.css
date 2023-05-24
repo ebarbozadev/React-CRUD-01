@@ -42,20 +42,20 @@ tbody tr:hover {
     gap: 10px;
 }
 
-.alterar-btn,
-.excluir-btn {
+.alterar_btn,
+.excluir_btn {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.alterar-btn {
+.alterar_btn {
     background-color: #007bff;
     color: #fff;
 }
 
-.excluir-btn {
+.excluir_btn {
     background-color: #dc3545;
     color: #fff;
 }
