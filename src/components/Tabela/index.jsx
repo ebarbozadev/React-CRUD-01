@@ -12,7 +12,7 @@ export default function Tabela({ usuarios }) {
                     <th>EMAIL</th>
                     <th>CELULAR</th>
                     <th>WEBSITE</th>
-                    <th>OPÇOES</th>
+                    <th>OPÇÕES</th>
                 </tr>
             </thead>
             <tbody>
