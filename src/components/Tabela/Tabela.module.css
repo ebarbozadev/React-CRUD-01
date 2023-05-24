@@ -4,7 +4,7 @@ table {
     margin-bottom: 20px;
 }
 
-caption {
+table caption {
     padding-top: 10px;
     font-size: 1.2em;
     font-weight: bold;
@@ -17,6 +17,7 @@ thead th {
     font-weight: bold;
     padding: 10px;
     text-align: left;
+    font-weight: 700;
 }
 
 tbody td {

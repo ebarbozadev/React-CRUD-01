@@ -1,0 +1,17 @@
+.campo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.campo label {
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.campo input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
