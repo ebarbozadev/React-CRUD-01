@@ -21,11 +21,11 @@ export default function Adicionar() {
       body: usuario,
     });
 
-    navigate('/');
+    navigate('/tabela'); // Redireciona para a página da tabela após adicionar o usuário
   };
 
   return (
-    <form onSubmit={(evento) => adicionarUsuario(evento)} className={styles.container__adicionar}>
+    <form onSubmit={adicionarUsuario} className={styles.container__adicionar}>
       <div className={styles.campo}>
         <div className={styles.campo__adicionar}>
           <label htmlFor="nome">Nome</label>
