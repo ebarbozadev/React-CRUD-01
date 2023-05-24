@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import styles from './Home.module.css';
 import Tabela from '../components/Tabela';
+import pegarURL from '../axios/config';
 
 export default function Home() {
     const [usuarios, setUsuarios] = useState([]);
@@ -11,7 +11,7 @@ export default function Home() {
         // Por ser uma função asyncrona ela pode falhar, por isso vamos colocar em um try catch
         try {
             // Armazena a resposta do get do axios que pega as informações da API
-            const resposta = await axios.get("https://jsonplaceholder.typicode.com/users");
+            const resposta = await pegarURL.get("/users");
 
             // Como nós vimos no console.log(resposta) ele nos retorna um objeto e tem um "data" com as informações, queremos só ela então:
             const data = resposta.data;
