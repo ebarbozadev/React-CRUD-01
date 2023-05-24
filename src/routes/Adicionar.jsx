@@ -34,7 +34,7 @@ export default function Adicionar() {
     return (
         <form onSubmit={(evento) => adicionarUsuario(evento)} className={styles.container__adicionar}>
             <div className={styles.campo}>
-                <Campo
+                {/* <Campo
                     children="Nome"
                     key={nome}
                     value={nome}
@@ -68,12 +68,27 @@ export default function Adicionar() {
                     type="text"
                     onChange={(evento) => setWebsite(evento.target.value)}
                     placeholder="Digite o website"
-                />
+                /> */}
 
-                {/* <div>
+                <div>
                     <label htmlFor="nome">Nome</label>
                     <input type="text" id='nome' placeholder='Digite o conteúdo' onChange={(evento) => setNome(evento.target.value)} />
-                </div> */}
+                </div>
+
+                <div>
+                    <label htmlFor="email">Email</label>
+                    <input type="email" id='email' placeholder='Digite o conteúdo' onChange={(evento) => setEmail(evento.target.value)} />
+                </div>
+
+                <div>
+                    <label htmlFor="celular">Celular</label>
+                    <input type="text" id='celular' placeholder='Digite o conteúdo' onChange={(evento) => setCelular(evento.target.value)} />
+                </div>
+
+                <div>
+                    <label htmlFor="website">Website</label>
+                    <input type="text" id='website' placeholder='Digite o conteúdo' onChange={(evento) => setWebsite(evento.target.value)} />
+                </div>
 
                 <input type="submit" value="Enviar" />
             </div>
