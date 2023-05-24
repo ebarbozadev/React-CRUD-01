@@ -1,15 +1,7 @@
 import React from 'react';
 import styles from './Tabela.module.css';
 
-export default function Tabela({ usuarios }) {
-  const handleAlterar = (id) => {
-    // Lógica para alterar usuário com o ID especificado
-  };
-
-  const handleExcluir = (id) => {
-    // Lógica para excluir usuário com o ID especificado
-  };
-
+export default function Tabela({ usuarios, onAlterarUsuario, onExcluirUsuario }) {
   return (
     <table className={styles.tabela}>
       <caption>Usuários cadastrados</caption>
@@ -32,8 +24,8 @@ export default function Tabela({ usuarios }) {
             <td>{usuario.phone}</td>
             <td>{usuario.website}</td>
             <td>
-              <button onClick={() => handleAlterar(usuario.id)}>Alterar</button>
-              <button onClick={() => handleExcluir(usuario.id)}>Excluir</button>
+              <button onClick={() => onAlterarUsuario(usuario)}>Alterar</button>
+              <button onClick={() => onExcluirUsuario(usuario)}>Excluir</button>
             </td>
           </tr>
         ))}
