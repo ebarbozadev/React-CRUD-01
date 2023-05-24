@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Campo.module.css';
 
-export default function Campo(props){
+export default function Campo( {children, type, placeholder, value} ){
     return(
         <div className={styles.campo}>
-            <label htmlFor={props.children}>{props.children}</label>
-            <input type={props.type} placeholder={props.placeholder} id={props.children} />
+            <label htmlFor={children}>{children}</label>
+            <input type={type} placeholder={placeholder} id={children} value={value} />
         </div>
     );
 }

@@ -1,6 +1,6 @@
 .container__adicionar {
     width: 100%;
-    height: calc(100vh - 7vh);
+    height: calc(100vh - 10vh);
     display: flex;
 }
 
