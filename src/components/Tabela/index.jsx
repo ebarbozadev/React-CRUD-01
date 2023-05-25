@@ -24,8 +24,8 @@ export default function Tabela({ usuarios, onAlterarUsuario, onExcluirUsuario })
                         <td>{usuario.phone}</td>
                         <td>{usuario.website}</td>
                         <td className={styles.opcoes}>
-                            <button className={styles.alterar_btn}>Alterar</button>
-                            <button className={styles.excluir_btn}>Excluir</button>
+                            <button onSubmit={onAlterarUsuario} className={styles.alterar_btn}>Alterar</button>
+                            <button onSubmit={onExcluirUsuario} className={styles.excluir_btn}>Excluir</button>
                         </td>
                     </tr>
                 ))}

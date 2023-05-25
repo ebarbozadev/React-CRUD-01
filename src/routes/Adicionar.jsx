@@ -29,22 +29,46 @@ export default function Adicionar() {
       <div className={styles.campo}>
         <div className={styles.campo__adicionar}>
           <label htmlFor="nome">Nome</label>
-          <input type="text" id="nome" placeholder="Digite o conteúdo" value={nome || ''} onChange={(evento) => setNome(evento.target.value)} required />
+          <input 
+          type="text" 
+          id="nome" 
+          placeholder="Digite o conteúdo" 
+          value={nome || ''} 
+          onChange={(evento) => setNome(evento.target.value)} 
+          required />
         </div>
 
         <div className={styles.campo__adicionar}>
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" placeholder="Digite o conteúdo" value={email || ''} onChange={(evento) => setEmail(evento.target.value)} required />
+          <input 
+          type="email" 
+          id="email" 
+          placeholder="Digite o conteúdo" 
+          value={email || ''} 
+          onChange={(evento) => setEmail(evento.target.value)} 
+          required />
         </div>
 
         <div className={styles.campo__adicionar}>
           <label htmlFor="celular">Celular</label>
-          <input type="text" id="celular" placeholder="Digite o conteúdo" value={celular || ''} onChange={(evento) => setCelular(evento.target.value)} required />
+          <input 
+          type="text" 
+          id="celular" 
+          placeholder="Digite o conteúdo" 
+          value={celular || ''} 
+          onChange={(evento) => setCelular(evento.target.value)} 
+          required />
         </div>
 
         <div className={styles.campo__adicionar}>
           <label htmlFor="website">Website</label>
-          <input type="text" id="website" placeholder="Digite o conteúdo" value={website || ''} onChange={(evento) => setWebsite(evento.target.value)} required />
+          <input 
+          type="text" 
+          id="website" 
+          placeholder="Digite o conteúdo" 
+          value={website || ''} 
+          onChange={(evento) => setWebsite(evento.target.value)} 
+          required />
         </div>
 
         <input type="submit" value="Enviar" />
