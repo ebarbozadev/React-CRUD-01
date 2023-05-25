@@ -21,6 +21,8 @@ export default function Adicionar() {
       body: usuario,
     });
 
+    console.log(usuario);
+
     navigate('/'); // Redireciona para a página da tabela após adicionar o usuário
   };
 
