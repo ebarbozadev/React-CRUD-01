@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Campo from '../components/Campo';
-// Comentário
 
 import styles from './Adicionar.module.css';
 import { useNavigate } from 'react-router-dom';
