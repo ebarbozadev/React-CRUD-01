@@ -1,7 +1,7 @@
 <hr>
 
 <main>
-    <h1 align="center">React CRUD I</h1>
+    <h1 align="center">Projeto React CRUD I</h1>
     <p align="center" style="font-size: 1.25rem;">
         <a href="#sobre">Sobre</a> •
         <a href="#tabela-de-conteudo">Tabela de Conteúdo</a> •
