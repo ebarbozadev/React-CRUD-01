@@ -22,7 +22,7 @@
     <h2 style="font-size: 1.25rem;">Tabela de Conteúdo</h2>
     <ul style="text-align: justify;" align="justify">
       <li>Axios;</li>
-      <li>Router;</li>
+      <li>Router.</li>
     </ul>
 </section>
 
