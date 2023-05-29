@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Tabela.module.css';
 
-export default function Tabela({ usuarios }) {
+export default function Tabela({ usuarios, onAlterarUsuario, onExcluirUsuario }) {
     return (
         <table className={styles.tabela}>
             <caption>Usuários cadastrados</caption>
@@ -16,18 +16,19 @@ export default function Tabela({ usuarios }) {
                 </tr>
             </thead>
             <tbody>
-                {
-                    usuarios.map((usuario) => (
-                        <tr>
-                            <td>{usuario.id}</td>
-                            <td>{usuario.name}</td>
-                            <td>{usuario.email}</td>
-                            <td>{usuario.phone}</td>
-                            <td>{usuario.website}</td>
-                            <td>Alterar Excluir</td>
-                        </tr>
-                    ))
-                }
+                {usuarios.map((usuario) => (
+                    <tr key={usuario.id}>
+                        <td>{usuario.id}</td>
+                        <td>{usuario.name}</td>
+                        <td>{usuario.email}</td>
+                        <td>{usuario.phone}</td>
+                        <td>{usuario.website}</td>
+                        <td className={styles.opcoes}>
+                            <button onSubmit={onAlterarUsuario} className={styles.alterar_btn}>Alterar</button>
+                            <button onSubmit={onExcluirUsuario} className={styles.excluir_btn}>Excluir</button>
+                        </td>
+                    </tr>
+                ))}
             </tbody>
         </table>
     );
